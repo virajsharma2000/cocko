@@ -52,6 +52,11 @@ if x == 'detectchars()':
    print('charecter ' + char + ' is in string')
  else:
     print('charecter ' + char + ' is not in string')
+if x == 'detectvovle()':
+ if 'a' in string or 'e' in string or 'i' in string or 'o' in string or 'u' in string:
+     print('there is a vovle in string')
+ else:
+  print('no vovle in string')
 
 
 
