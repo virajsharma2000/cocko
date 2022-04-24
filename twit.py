@@ -40,7 +40,6 @@ if x == 'sort(string)':
  for so in array2:
   string2 += so
  print(string2)
- print
   
 
 
