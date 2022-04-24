@@ -40,7 +40,12 @@ if x == 'sort(string)':
  for so in array2:
   string2 += so
  print(string2)
-  
+if x == 'reverse(string)':
+ reversed_string = string[::-1]
+ print(reversed_string)
+if x == 'normal(string)':
+ normal = string[::1]
+ print(notmal)
 
 
 
