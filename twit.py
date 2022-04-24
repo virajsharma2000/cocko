@@ -46,7 +46,12 @@ if x == 'reverse(string)':
 if x == 'normal(string)':
  normal = string[::1]
  print(normal)
-
+if x == 'detectchars()':
+ char = input('one char: ')
+ if char in string:
+   print('charecter ' + char + ' is in string')
+ else:
+    print('charecter ' + char + ' is not in string')
 
 
 
