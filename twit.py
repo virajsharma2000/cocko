@@ -45,7 +45,7 @@ if x == 'reverse(string)':
  print(reversed_string)
 if x == 'normal(string)':
  normal = string[::1]
- print(notmal)
+ print(normal)
 
 
 
