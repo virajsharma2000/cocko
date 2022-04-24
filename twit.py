@@ -20,4 +20,17 @@ if x == 'shuffle(letters)':
  for a in array:
   emptystring += a
  print(emptystring)
- 
+if x == 'replace(string)':
+ y = input('new string: ')
+ print(string.replace(string,y))
+if x == 'remove(string)':
+ print(string.replace(string,''))
+
+
+
+
+
+
+
+
+
