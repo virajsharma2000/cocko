@@ -5,6 +5,8 @@ file = open(k,'r')
 x = file.read().strip()
 if x == 'capital(string)':
  print(string.capitalize())
+if x == 'lower(string)':
+ print(string.lower())
 if x == 'length(string)':
  print(int(len(string)))
 if x == 'show(string)':
@@ -57,8 +59,8 @@ if x == 'detectvovle()':
      print('there is a vovle in string')
  else:
   print('no vovle in string')
-
-
-
+if x == 'range(string)':
+ for rangestr in string:
+   print(rangestr)
 
 
