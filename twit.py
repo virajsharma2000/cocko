@@ -62,5 +62,20 @@ if x == 'detectvovle()':
 if x == 'range(string)':
  for rangestr in string:
    print(rangestr)
+if x == 'stringtoint()':
+ convert = int(string)
+ print('before it was: ')
+ print(type(string))
+ print('now it is: ')
+ print(type(convert))
+if x == 'stringtofloat()':
+ convert2 = float(string)
+ print('before it was: ')
+ print(type(string))
+ print('now it is: ')
+ print(type(convert2))
+
+
+ 
 
 
