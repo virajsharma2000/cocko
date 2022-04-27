@@ -74,6 +74,9 @@ if x == 'stringtofloat()':
  print(type(string))
  print('now it is: ')
  print(type(convert2))
+if x == 'assci(string)':
+ for x in string:
+  print(ord(x))
 
 
  
