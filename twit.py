@@ -77,8 +77,16 @@ if x == 'stringtofloat()':
 if x == 'assci(string)':
  for x in string:
   print(ord(x))
-
-
- 
+if x == 'pickanyletter(string)':
+ emptyarray = []
+ for letters in string:
+   emptyarray.append(letters)
+ letter = random.choice(emptyarray)
+ print(letter)
+if x == 'statistic(string)':
+ emptyarray2 = []
+ for letter in string:
+  emptyarray2.append(letter)
+  print(letter,emptyarray2.count(letter))
 
 
