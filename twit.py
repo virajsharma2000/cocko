@@ -1,4 +1,5 @@
 import random
+import pyfiglet
 string = input('string: ')
 k = input('file: ')
 file = open(k,'r')
@@ -38,7 +39,7 @@ if x == 'sort(string)':
  string2 = ''
  for s in string:
   array2.append(s)
- array2.sort()
+  array2.sort()
  for so in array2:
   string2 += so
  print(string2)
@@ -88,5 +89,5 @@ if x == 'statistic(string)':
  for letter in string:
   emptyarray2.append(letter)
   print(letter,emptyarray2.count(letter))
-
-
+if x == 'figlet(string)':
+ print(pyfiglet.figlet_format(string))
