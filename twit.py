@@ -93,6 +93,6 @@ if x == 'statistic(string)':
 if x == 'figlet(string)':
  print(pyfiglet.figlet_format(string))
 if x == 'searchstring()':
- print(pywhatkit.info(string))
+ pywhatkit.info(string)
 if x == 'hashstring()':
  print(str(hash(string)))
