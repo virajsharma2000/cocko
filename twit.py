@@ -1,5 +1,6 @@
 import random
 import pyfiglet
+import pywhatkit
 string = input('string: ')
 k = input('file: ')
 file = open(k,'r')
@@ -91,3 +92,7 @@ if x == 'statistic(string)':
   print(letter,emptyarray2.count(letter))
 if x == 'figlet(string)':
  print(pyfiglet.figlet_format(string))
+if x == 'searchstring()':
+ print(pywhatkit.info(string))
+if x == 'hashstring()':
+ print(str(hash(string)))
