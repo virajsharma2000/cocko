@@ -96,3 +96,17 @@ if x == 'searchstring()':
  pywhatkit.info(string)
 if x == 'hashstring()':
  print(str(hash(string)))
+if x == 'strangestring()':
+ c = ''
+ for s in string:
+  assci = int(ord(s) - 1)
+  asscitostr = chr(assci)
+  c += asscitostr
+ print(c)
+if x == 'searchcharindex(string)':
+ charecter = input('charecter: ')
+ list2 = []
+ for stri in string:
+     list2.append(stri)
+ print('index of charecter called ' + charecter + ' is',list2.index(charecter))
+  
