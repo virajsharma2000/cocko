@@ -197,4 +197,8 @@ if x == 'searchcharindex(string)':
 if x == 'isnumeric(string)':
  # building the finder of that is string have a number
  print(string.isnumeric())
+
+if x == 'islower(string)':
+ # building the finder of that string is lower
+ print(string.islower())
     
