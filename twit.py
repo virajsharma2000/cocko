@@ -3,6 +3,7 @@ import random
 import pyfiglet
 import pywhatkit
 
+
 # init varible called string asking input for string
 string = input('string: ')
 # init varible called k  asking input for file
@@ -193,3 +194,7 @@ if x == 'searchcharindex(string)':
  # printing the index of the string charr
  print('index of charecter called ' + charecter + ' is',list2.index(charecter))
   
+if x == 'isnumeric(string)':
+ # building the finder of that is string have a number
+ print(string.isnumeric())
+    
