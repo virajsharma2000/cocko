@@ -4,6 +4,7 @@ import pywhatkit
 
 
 string = input('string: ')
+
 k = input('file: ')
 
 file = open(k,'r')
@@ -155,4 +156,7 @@ if x == 'searchcharindex(string)':
      list2.append(stri)
  
  print('index of charecter called ' + charecter + ' is',list2.index(charecter))
+  
+
+
   
