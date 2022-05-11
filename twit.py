@@ -2,12 +2,13 @@
 import random
 import pyfiglet
 import pywhatkit
+import sys
 
 
 # init varible called string asking input for string
+k = sys.argv[1]
+# init varible called string asking input for string
 string = input('string: ')
-# init varible called k  asking input for file
-k = input('file: ')
 # init file name
 file = open(k,'r')
 # reading fiile in propper string
@@ -53,11 +54,11 @@ if 'replace(string)' in x:
  # init varible called y of input
  y = input('new string: ')
  # updating the string
- print(string.replace(string,y))
+ string.replace(string,y)
 
 if 'remove(string)' in x:
  # building string remover
- print(string.replace(string,''))
+ string.replace(string,'')
 
 if 'check_big_string_and_small_string()' in x:
  # init varible called length finding length in varible
@@ -84,15 +85,14 @@ if 'sort(string)' in x:
 
 if 'reverse(string)' in x:
  # init varible called reversed_string
- reversed_string = string[::-1]
- # show the reversed string
- print(reversed_string)
-
+ reversedstring = string[::-1]
+ print(reversedstring)
+ 
 if 'normal(string)' in x:
  # init normal varible for converting back string to normal string 
  normal = string[::1]
  print(normal)
-
+ 
 if 'detectchars()' in x:
  # init the input varible called char
  char = input('one char: ')
@@ -145,9 +145,9 @@ if 'pickanyletter(string)' in x:
  for letters in string:
    emptyarray.append(letters)
  # chossing any letter randomly
- letter = random.choice(emptyarray)
+ randomchoice = random.choice(emptyarray)
  # showing the choosed letter
- print(letter)
+ print(randomchoice)
 
 if 'statistic(string)' in x:
  # init array varible called emptyarray2
@@ -168,7 +168,7 @@ if x == 'searchstring()':
 
 if 'hashstring()' in x:
  # creating hash maker
- print(str(hash(string)))
+ str(hash(string))
 
 if 'strangestring()' in x:
  # init the empty string
