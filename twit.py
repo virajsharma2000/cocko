@@ -13,27 +13,27 @@ file = open(k,'r')
 # reading fiile in propper string
 x = file.read().strip()
 # writing if for the code example if this code do this feature
-if x == 'capital(string)':
+if  'capital(string)' in x:
  # building feature called capital
  print(string.capitalize())
 
-if x == 'lower(string)':
+if 'lower(string)' in x:
  # building capital to lower converter
  print(string.lower())
 
-if x == 'length(string)':
+if 'length(string)' in x:
  # building string length finder
  print(int(len(string)))
 
-if x == 'show(string)':
+if 'show(string)' in x:
  # building string reader
  print(string)
 
-if x == 'stringtoarray()':
+if 'stringtoarray()' in x:
  # building string to array converter
  print(string.split())
 
-if x == 'shuffle(letters)':
+if 'shuffle(letters)' in x:
  # init varible of list called array
  array = []
  #init empty string
@@ -49,17 +49,17 @@ if x == 'shuffle(letters)':
  # printing the string
  print(emptystring)
 
-if x == 'replace(string)':
+if 'replace(string)' in x:
  # init varible called y of input
  y = input('new string: ')
  # updating the string
  print(string.replace(string,y))
 
-if x == 'remove(string)':
+if 'remove(string)' in x:
  # building string remover
  print(string.replace(string,''))
 
-if x == 'check_big_string_and_small_string()':
+if 'check_big_string_and_small_string()' in x:
  # init varible called length finding length in varible
  length = int(len(string))
  # creating small of big checker using if and else
@@ -67,7 +67,7 @@ if x == 'check_big_string_and_small_string()':
   print('big string')
  else:
   print('small string')
-if x == 'sort(string)':
+if 'sort(string)' in x:
  # init varible called array2 it is array varible
  array2 = []
  # init empty string
@@ -82,18 +82,18 @@ if x == 'sort(string)':
   string2 += so
  print(string2)
 
-if x == 'reverse(string)':
+if 'reverse(string)' in x:
  # init varible called reversed_string
  reversed_string = string[::-1]
  # show the reversed string
  print(reversed_string)
 
-if x == 'normal(string)':
+if 'normal(string)' in x:
  # init normal varible for converting back string to normal string 
  normal = string[::1]
  print(normal)
 
-if x == 'detectchars()':
+if 'detectchars()' in x:
  # init the input varible called char
  char = input('one char: ')
  # checking if char is there inn string ot not with support of if and else
@@ -109,12 +109,12 @@ if x == 'detectvovle()':
  else:
   print('no vovle in string')
 
-if x == 'range(string)':
+if 'range(string)' in x:
  # creating for loop for ranging the string
  for rangestr in string:
    print(rangestr)
 
-if x == 'stringtoint()':
+if 'stringtoint()' in x:
  # init intiger varible called convert converts str to int
  convert = int(string)
  # showing the that it converted the str to int
@@ -123,7 +123,7 @@ if x == 'stringtoint()':
  print('now it is: ')
  print(type(convert))
 
-if x == 'stringtofloat()':
+if 'stringtofloat()' in x:
  # init te float varible for converting the str to float
  convert2 = float(string)
  # showing that it converted the str to float
@@ -132,13 +132,13 @@ if x == 'stringtofloat()':
  print('now it is: ')
  print(type(convert2))
 
-if x == 'assci(string)':
+if 'assci(string)' in x:
  # ranging string charecter
  for x in string:
   # convert ing the string to assci numbers
   print(ord(x))
 
-if x == 'pickanyletter(string)':
+if 'pickanyletter(string)' in x:
  # init array varible called emptyarray
  emptyarray = []
  # creating for loop for appending
@@ -149,7 +149,7 @@ if x == 'pickanyletter(string)':
  # showing the choosed letter
  print(letter)
 
-if x == 'statistic(string)':
+if 'statistic(string)' in x:
  # init array varible called emptyarray2
  emptyarray2 = []
  # creating the loop for appending all string things to array
@@ -158,7 +158,7 @@ if x == 'statistic(string)':
   # creating the statistic important thing
   print(letter,emptyarray2.count(letter))
 
-if x == 'figlet(string)':
+if 'figlet(string)' in x:
  # building asci art generator
  print(pyfiglet.figlet_format(string))
 
@@ -166,11 +166,11 @@ if x == 'searchstring()':
  # building string info search engine
  pywhatkit.info(string)
 
-if x == 'hashstring()':
+if 'hashstring()' in x:
  # creating hash maker
  print(str(hash(string)))
 
-if x == 'strangestring()':
+if 'strangestring()' in x:
  # init the empty string
  c = ''
  # creating for loop for ranging string chars then convert them into assci number then subtarct assci number into the what letter comes before the string letter
@@ -183,7 +183,7 @@ if x == 'strangestring()':
   # showing the string that what strange word it written
  print(c)
 
-if x == 'searchcharindex(string)':
+if 'searchcharindex(string)' in x:
  # init the variable called charecter
  charecter = input('charecter: ')
  # init the varible of list aclled list2
@@ -194,11 +194,11 @@ if x == 'searchcharindex(string)':
  # printing the index of the string charr
  print('index of charecter called ' + charecter + ' is',list2.index(charecter))
   
-if x == 'isnumeric(string)':
+if 'isnumeric(string)' in x:
  # building the finder of that is string have a number
  print(string.isnumeric())
 
-if x == 'islower(string)':
+if 'islower(string)' in x:
  # building the finder of that string is lower
  print(string.islower())
     
