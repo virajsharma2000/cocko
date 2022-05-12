@@ -5,7 +5,7 @@ import pywhatkit
 import sys
 
 
-# init varible called string asking input for string
+# init varible called k for asking file input in console argument
 k = sys.argv[1]
 # init varible called string asking input for string
 string = input('string: ')
