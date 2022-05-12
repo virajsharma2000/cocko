@@ -201,4 +201,21 @@ if 'isnumeric(string)' in x:
 if 'islower(string)' in x:
  # building the finder of that string is lower
  print(string.islower())
-    
+
+if 'removenumbers(string)' in x:
+ # building number remover
+ # building a empty list varible
+ stringout = []
+ # init empty string
+ emptystring = ''
+ # printing the numbers
+ for strng in string:
+   if not strng.isdigit():
+    # appending the string things in the stringout list
+    stringout.append(strng)
+ # converting stringout list to back string
+ for stringou in stringout:
+  emptystring += stringou
+ print(emptystring)
+  
+
