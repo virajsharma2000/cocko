@@ -4,7 +4,6 @@ import pyfiglet
 import pywhatkit
 import sys
 
-
 # init varible called k for asking file input in console argument
 k = sys.argv[1]
 # init varible called string asking input for string
@@ -215,7 +214,10 @@ if 'removenumbers(string)' in x:
     stringout.append(strng)
  # converting stringout list to back string
  for stringou in stringout:
-  emptystring += stringou
- print(emptystring)
-  
+  emptystring += stringout
+
+
+    
+        
+ 
 
