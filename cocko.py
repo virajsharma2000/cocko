@@ -4,9 +4,9 @@ import pyfiglet
 import pywhatkit
 import sys
 
-# init varible called k for asking file input in console argument
+# init variable called k for asking file input in console argument
 k = sys.argv[1]
-# init varible called string asking input for string
+# init variable called string asking input for string
 string = input('string: ')
 # init file name
 file = open(k,'r')
@@ -34,11 +34,11 @@ if 'stringtoarray()' in x:
  print(string.split())
 
 if 'shuffle(letters)' in x:
- # init varible of list called array
+ # init variable of list called array
  array = []
  #init empty string
  emptystring = ''
- # creating for loop for appending each letter of string in varible called array
+ # creating for loop for appending each letter of string in variable called array
  for y in string:
   array.append(y)
  # jumbling array
@@ -50,7 +50,7 @@ if 'shuffle(letters)' in x:
  print(emptystring)
 
 if 'replace(string)' in x:
- # init varible called y of input
+ # init variable called y of input
  y = input('new string: ')
  # updating the string
  string.replace(string,y)
@@ -60,7 +60,7 @@ if 'remove(string)' in x:
  string.replace(string,'')
 
 if 'check_big_string_and_small_string()' in x:
- # init varible called length finding length in varible
+ # init variable called length finding length in variable
  length = int(len(string))
  # creating small of big checker using if and else
  if length > 5:
@@ -68,11 +68,11 @@ if 'check_big_string_and_small_string()' in x:
  else:
   print('small string')
 if 'sort(string)' in x:
- # init varible called array2 it is array varible
+ # init variable called array2 it is array variable
  array2 = []
  # init empty string
  string2 = ''
- # creating loop for appending all the string in array2 varible
+ # creating loop for appending all the string in array2 variable
  for s in string:
   array2.append(s)
   # sorting the list
@@ -83,17 +83,17 @@ if 'sort(string)' in x:
  print(string2)
 
 if 'reverse(string)' in x:
- # init varible called reversed_string
+ # init variable called reversed_string
  reversedstring = string[::-1]
  print(reversedstring)
  
 if 'normal(string)' in x:
- # init normal varible for converting back string to normal string 
+ # init normal variable for converting back string to normal string 
  normal = string[::1]
  print(normal)
  
 if 'detectchars()' in x:
- # init the input varible called char
+ # init the input variable called char
  char = input('one char: ')
  # checking if char is there inn string ot not with support of if and else
  if char in string:
@@ -114,7 +114,7 @@ if 'range(string)' in x:
    print(rangestr)
 
 if 'stringtoint()' in x:
- # init intiger varible called convert converts str to int
+ # init intiger variable called convert converts str to int
  convert = int(string)
  # showing the that it converted the str to int
  print('before it was: ')
@@ -123,7 +123,7 @@ if 'stringtoint()' in x:
  print(type(convert))
 
 if 'stringtofloat()' in x:
- # init te float varible for converting the str to float
+ # init te float variable for converting the str to float
  convert2 = float(string)
  # showing that it converted the str to float
  print('before it was: ')
@@ -138,7 +138,7 @@ if 'assci(string)' in x:
   print(ord(x))
 
 if 'pickanyletter(string)' in x:
- # init array varible called emptyarray
+ # init array variable called emptyarray
  emptyarray = []
  # creating for loop for appending
  for letters in string:
@@ -149,7 +149,7 @@ if 'pickanyletter(string)' in x:
  print(randomchoice)
 
 if 'statistic(string)' in x:
- # init array varible called emptyarray2
+ # init array variable called emptyarray2
  emptyarray2 = []
  # creating the loop for appending all string things to array
  for letter in string:
@@ -163,11 +163,40 @@ if 'figlet(string)' in x:
 
 if x == 'searchstring()':
  # building string info search engine
- pywhatkit.info(string)
+ print(pywhatkit.info(string))
 
 if 'hashstring()' in x:
  # creating hash maker
- str(hash(string))
+ def iseven(number):
+    if int(number) % 2 == 0:
+        return True
+
+    else:
+        return False
+
+
+ def dividanswer(number):
+  if iseven(int(number)) == True:
+   return int(int(number) / 2)
+
+  else:
+   return int(int(number) / 3)
+
+
+ def finalhash(hashnumber):
+  h = dividanswer(hashnumber)
+  h2 = str(h)
+
+  if len(h2) == 24:
+     return h2
+
+  else:
+     while not len(h2) == 24:
+         h2 += '0'
+
+     return h2
+
+ print(finalhash(string))
 
 if 'strangestring()' in x:
  # init the empty string
@@ -185,7 +214,7 @@ if 'strangestring()' in x:
 if 'searchcharindex(string)' in x:
  # init the variable called charecter
  charecter = input('charecter: ')
- # init the varible of list aclled list2
+ # init the variable of list aclled list2
  list2 = []
  # creating for loop for appending all the thing of string to array
  for stri in string:
@@ -203,7 +232,7 @@ if 'islower(string)' in x:
 
 if 'removenumbers(string)' in x:
  # building number remover
- # building a empty list varible
+ # building a empty list variable
  stringout = []
  # init empty string
  emptystring = ''
@@ -216,7 +245,23 @@ if 'removenumbers(string)' in x:
  for stringou in stringout:
   emptystring += stringout
 
+if 'createfunnysentence(likepumpu)' in x:
+    # creating feature called createfunnysentencelikepumpu
+    # spliting words into a list
+    list = string.split()
+    # shuffling the list
+    random.shuffle(list)
+    # init empty string
+    finalres = ''
+    # converting list back to string
+    for x in list:
+        finalres += x
+    # printing finalres variable
+    print(finalres)
 
+    
+    
+    
     
         
  
